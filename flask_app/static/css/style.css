@@ -1,0 +1,716 @@
+/* *****GLOBAL STYLES***** */
+
+
+/* BUILT INS */
+body {
+    background: linear-gradient(to right, white, wheat);
+}
+
+table {
+    width: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: palegoldenrod;
+    border-radius: 15px;
+}
+th {
+    color:whitesmoke;
+    text-align: left;
+    padding-left: 8px;
+}
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* BUILT INS */
+
+
+
+/* FONTS */
+.shrikhand-regular {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+  }
+  
+
+.abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.text-center{
+    text-align: center;
+}
+
+.fs-small {
+    font-size: 8px;
+}
+
+.fs-medium {
+    font-size: 12px;
+}
+
+.fs-large {
+    font-size: 14px;
+}
+
+.fs-header-small {
+    font-size: 20px;
+}
+.fs-header-medium {
+    font-size: 25px;
+}
+.fs-header-large {
+    font-size: 35px;
+}
+.fs-header-xlarge {
+    font-size: 40px;
+}
+.fs-header-xxlarge {
+    font-size:50px
+}
+
+.fc-white {
+    color: white;
+}
+
+.fc-wheat {
+    color: wheat;
+}
+
+.fc-black {
+    color: black;
+}
+
+.fc-grey {
+    color: grey;
+}
+
+.fc-orange {
+    color: orange;
+}
+
+.fc-peachpuff {
+    color: peachpuff;
+}
+
+.fc-khaki {
+    color: khaki;
+}
+
+.fc-green {
+    color: #0a3d2e;
+}
+
+.fc-red {
+    color: red;
+}
+/* FONTS */
+
+
+
+/* FLEX PROPERTIES */
+.d-flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.d-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.d-flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.d-flex-start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex1 {
+    display: flex;
+    flex: 1;
+}
+
+.flex2 {
+    display: flex;
+    flex: 2;
+}
+/* FLEX PROPERTIES */
+
+
+
+/* SPACING BY PX */
+.push-in {
+    margin-left: 25%;
+    margin-right: 25%;
+    gap: 20px;
+}
+/* margin */
+.m-1{
+    margin: 10px;
+}
+
+.m-2 {
+    margin: 20px;
+}
+
+.m-3{
+    margin: 30px;
+}
+
+.m-4 {
+    margin: 40px;
+}
+
+.m-5 {
+    margin: 50px;
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.mt-3 {
+    margin-top: 30px;
+}
+
+.mt-4 {
+    margin-top: 40px;
+}
+
+.mt-5 {
+    margin-top: 50px;
+}
+
+.mb-1 {
+    margin-bottom: 10px;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+.mb-3 {
+    margin-bottom: 30px;
+}
+
+.mb-4 {
+    margin-bottom: 40px;
+}
+
+.mb-5 {
+    margin-bottom: 50px;
+}
+
+.mr-1 {
+    margin-right: 10px;
+}
+
+.mr-2 {
+    margin-right: 20px;
+}
+
+.mr-3 {
+    margin-right: 30px;
+}
+
+.mr-4 {
+    margin-right: 40px;
+}
+
+.mr-5 {
+    margin-right: 50px;
+}
+
+.ml-1 {
+    margin-left: 10px;
+}
+
+.ml-2 {
+    margin-left: 20px;
+}
+
+.ml-3 {
+    margin-left: 30px
+}
+
+.ml-4 {
+    margin-left: 40px;
+}
+
+.ml-5 {
+    margin-left: 50px;
+}
+
+.neg-mb-1 {
+    margin-bottom: -10px;
+}
+.neg-mb-2 {
+    margin-bottom: -20px;
+}
+.neg-mb-3 {
+    margin-bottom: -30px;
+}
+.neg-mb-4 {
+    margin-bottom: -40px;
+}
+.neg-mb-5 {
+    margin-bottom: -50px;
+}
+.neg-mt-1 {
+    margin-top: -10px;
+}
+.neg-mt-2 {
+    margin-top: -20px;
+}
+.neg-mt-3 {
+    margin-top: -30px;
+}
+.neg-mt-4 {
+    margin-top: -40px;
+}
+.neg-mt-5 {
+    margin-top: -50px;
+}
+/* margin */
+/* padding */
+.p-1 {
+    padding: 10px;
+}
+
+.p-2 {
+    padding: 20px;
+}
+
+.p-3 {
+    padding: 30px
+}
+
+.p-4 {
+    padding: 40px;
+}
+
+.p-5 {
+    padding: 50px;
+}
+
+.pt-1 {
+    padding-top: 10px;
+}
+
+.pt-2 {
+    padding-top: 20px;
+}
+
+.pt-3 {
+    padding-top: 30px
+}
+
+.pt-4 {
+    padding-top: 40px;
+}
+
+.pt-5 {
+    padding-top: 50px;
+}
+
+.pb-1 {
+    padding-bottom: 10px;
+}
+
+.pb-2 {
+    padding-bottom: 20px;
+}
+
+.pb-3 {
+    padding-bottom: 30px
+}
+
+.pb-4 {
+    padding-bottom: 40px;
+}
+
+.pb-5 {
+    padding-bottom: 50px;
+}
+
+.pr-1 {
+    padding-right: 10px;
+}
+
+.pr-2 {
+    padding-right: 20px;
+}
+
+.pr-3 {
+    padding-right: 30px
+}
+
+.pr-4 {
+    padding-right: 40px;
+}
+
+.pr-5 {
+    padding-right: 50px;
+}
+
+.pl-1 {
+    padding-left: 10px;
+}
+
+.pl-2 {
+    padding-left: 20px;
+}
+
+.pl-3 {
+    padding-left: 30px
+}
+
+.pl-4 {
+    padding-left: 40px;
+}
+
+.pl-5 {
+    padding-left: 50px;
+}
+/* padding */
+/* SPACING BY PX */
+
+
+
+/* CONTAINERS */
+.form-border {
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    border-color: silver;
+}
+
+.comment-box{
+    background-color: blanchedalmond;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+}  
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.width-all {
+    width: 100%;
+
+}
+
+.rounded-corners {
+    border-radius: 10px;
+}
+
+.border-top {
+    border-top: solid;
+    border-color: black;
+}
+
+.border1 {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    color: red;
+    border-width: 5px;
+    border-style:outset;
+    border-color: honeydew;
+}
+
+.border3 {
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    width: 70%;
+    color: red;
+}
+
+.border2 {
+    border-style: solid;
+    border-color: silver;
+    border-width: 2px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    color: white;
+    box-shadow: 2px 2px 2px black;
+}
+
+.border4 {
+    border-radius: 5px;
+    background-color:azure ;
+    width: 100%;
+    color: black;
+}
+
+.table-border {
+    background: linear-gradient(to left, coral, orange);
+    color: khaki;
+    width: fit-content;
+}
+
+.table-border1 {
+    background: linear-gradient(to top, red, wheat);
+    color: khaki;
+    width: 70%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.comments-section {
+    flex-grow: 1;
+    /* Adjust other styles as needed */
+}
+
+.leave-comment-section {
+    position: sticky;
+    top: 30%;
+    align-self: flex-start;
+    width: 30%;
+    /* Adjust other styles as needed */
+}
+
+
+.card {
+    width: 80%;
+    background: linear-gradient(to right, red, wheat);
+    border-radius: 20px;
+    border-style: outset;
+    border-color: maroon;
+    color: white;
+}
+
+.dashboard-table {
+    width: 80%;
+}
+
+.dashboard-padding {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+/* CONTAINERS */
+
+
+
+/* MOVEMENTS */
+.grow { 
+    transition: all .08s ease-in-out;
+    }
+    
+.grow:hover { 
+transform: scale(3); 
+}
+
+.grow-small { 
+    transition: all .08s ease-in-out; 
+    }
+    
+.grow-small:hover { 
+transform: scale(1.5); 
+}
+
+.grow-xsmall { 
+    transition: all .08s ease-in-out; 
+    }
+    
+.grow-xsmall:hover { 
+transform: scale(1.2); 
+}
+
+.submit-btn1:hover {
+    animation: wiggle 0.5s ease infinite alternate; /* Add wiggle animation on hover */
+}
+
+.wiggle:hover {
+    animation: wiggle 0.5s ease infinite alternate; /* Add wiggle animation on hover */
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(-4deg);
+    }
+    100% {
+        transform: rotate(4deg);
+    }
+}
+/* MOVEMENTS */
+
+
+
+/* INPUTS */
+.input-shade {
+    background-color:azure;
+    color: black;
+    padding: 3px;
+    border-radius: 8px;
+    border-style: inset;
+    border-color: maroon;
+    font-family: silkscreen;
+}
+/* INPUTS */
+
+
+
+/* BUTTONS */
+.delete-btn1 {
+    background-color:orange;
+    border-style: none;
+    color: palegoldenrod;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: quicksand;
+}
+
+.delete-btn1:hover {
+    background-color: red;
+    border-style: solid;
+    border-color: yellow;
+    color: white;
+}
+
+
+.submit-btn1 {
+    background-color:red;
+    border-style: none;
+    color: palegoldenrod;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: silkscreen;
+}
+
+.submit-btn2 {
+    background-color:palegoldenrod;
+    border-style: none;
+    color: orange;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: quicksand;
+}
+
+.move-btn-1 {
+    background-color:red;
+    border-style: none;
+    color: palegoldenrod;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: silkscreen;
+    width: 80px;
+    height: 18px;
+    font-size: 15px;
+}
+
+.move-btn-2 {
+    background-color: peachpuff;
+    border-style: none;
+    color: orange;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: quicksand;
+    width: 80px;
+    height: 18px;
+    font-size: 15px;
+}
+
+.close-btn {
+    border-radius: 15px;
+    background-color:peachpuff; 
+    color: orange;
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.hidden-btn {
+    color: inherit;
+    background: none;
+    background-color: none;
+    border-style: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.hidden-btn:hover {
+    color: red;
+    font-weight: bolder;
+    text-decoration: underline;
+    background: none;
+    background-color: none;
+    border-style: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+/* BUTTONS */
+
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .push-in {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .small-d-flex-column{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
