@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{pie.recipe}} Details</title>
+    <title>{{post.recipe}} Details</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
 <div>
     <div class="mr-5 ml-5 mt-1 d-flex-end fs-header-medium">
         <div class="quicksand wiggle">
-            <a class="move-btn-1" href="/pies">Return to All Pies</a>
+            <a class="move-btn-1" href="/posts">Return to All posts</a>
         </div>
         <div class="ml-2">
             <form role="logout" action="/users/logout">
@@ -36,18 +36,18 @@
             <!-- flash message -->
             <!-- recipe details -->
             <div class="pr-2 pl-2 mb-5 mt-4">
-                <h1 class="pie-block-header fs-header-large">{{pie.recipe}}!</h1>
-                <h2>By {{pie.user.first_name}}</h2>
-                <p>{{pie.filling}} with {{pie.crust}} crust</p>
+                <h1 class="post-block-header fs-header-large">{{post.recipe}}!</h1>
+                <h2>By {{post.user.first_name}}</h2>
+                <p>{{post.filling}} with {{post.crust}} crust</p>
             </div>
             <!-- recipe details -->
-            <!-- leave rating -->
+            <!-- leave comment -->
             <div>
-                {% if has_submitted_rating %}
+                {% if has_submitted_comment %}
                     <h3 class="text-center mt-2">You voted for this!</h3>
-                    <form id="remove-vote-form" action="/ratings/{{ user_rating_id }}/delete" method="POST">
-                        <input type="hidden" name="pie_id" value="{{ user_pie_id }}">
-                        <input type="hidden" name="rating_id" value="{{ user_rating_id }}">
+                    <form id="remove-vote-form" action="/comments/{{ user_comment_id }}/delete" method="POST">
+                        <input type="hidden" name="post_id" value="{{ user_post_id }}">
+                        <input type="hidden" name="comment_id" value="{{ user_comment_id }}">
                         <div class="d-flex-column d-flex-center">
                             <input type="submit" class="submit-btn1 mt-2 mb-2" value="Remove Vote">
                         </div>
@@ -56,8 +56,8 @@
                     
                 {% else %}
                     <h3 class="text-center mt-2">Cast a Vote!</h3>
-                    <form id="rating-form" action="/ratings/create" method="POST">
-                        <input type="hidden" name="pie_id" value="{{ pie.id }}">
+                    <form id="comment-form" action="/comments/create" method="POST">
+                        <input type="hidden" name="post_id" value="{{ post.id }}">
                         <input type="hidden" name="user_id" value="{{ user.id }}">
                         <div class="d-flex-column d-flex-center">
                             <input type="hidden" name="points" value="1"> <!-- Fixed value for the button -->
@@ -66,7 +66,7 @@
                     </form>
                 {% endif %}
             </div>
-            <!-- leave rating -->
+            <!-- leave comment -->
     </div>
     </div>
     <!-- RECIPE CARD -->

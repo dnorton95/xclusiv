@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit pies</title>
+    <title>Edit posts</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +17,11 @@
   <!-- HEADER -->
     <div class="pl-3 d-flex-between">
       <div class="flex1 fc-red shrikhand-regular">
-        <h1>Pie Editor</h1>
+        <h1>post Editor</h1>
       </div>
       <div class="flex3 mr-5 ml-5 mt-1 d-flex-end fs-header-medium">
           <div class="wiggle">
-            <a class="move-btn-1" href="/dashboard">Return to All Pies</a>
+            <a class="move-btn-1" href="/dashboard">Return to All posts</a>
           </div>
           <div class="ml-2">
             <form role="logout" action="/users/logout">
@@ -46,22 +46,22 @@
         </div>
           <!-- flash message -->
 
-<!-- EDIT PIE -->
+<!-- EDIT post -->
     <div class="small-d-flex-column d-flex-around push-in">
         <div class="d-flex-center d-flex-column">
-            <form class="p-5 border1 d-flex-center d-flex-column" action="/pies/update" method="POST">
-                <h2 class="neg-mt-1">Edit {{ pie.recipe}}:</h2>
-                <input type="hidden" name="pie_id" value="{{ pie.id }}">
+            <form class="p-5 border1 d-flex-center d-flex-column" action="/posts/update" method="POST">
+                <h2 class="neg-mt-1">Edit {{ post.recipe}}:</h2>
+                <input type="hidden" name="post_id" value="{{ post.id }}">
                 <label for="recipe">Name:</label>
-                <input class="input-shade border" type="text" id="recipe" name="recipe" value="{{ pie.recipe }}">
+                <input class="input-shade border" type="text" id="recipe" name="recipe" value="{{ post.recipe }}">
                 <label class="mt-1" for="filling">Filling:</label>
-                <textarea class="input-shade border" id="filling" name="filling">{{ pie.filling }}</textarea>
+                <textarea class="input-shade border" id="filling" name="filling">{{ post.filling }}</textarea>
                 <label class="mt-1" for="crust">Crust:</label>
-                <textarea class="input-shade border" id="crust" name="crust">{{pie.crust}}</textarea>
+                <textarea class="input-shade border" id="crust" name="crust">{{post.crust}}</textarea>
                 <input class="grow-small submit-btn1 mt-1" type="submit" value="Submit">
             </form>
         </div>
-<!-- EDIT PIE -->
+<!-- EDIT post -->
 
 
 </body>

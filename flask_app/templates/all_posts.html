@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Pies</title>
+    <title>All posts</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,9 +43,9 @@
           <!-- flash message -->
     </div>
 
-    <!-- ALL PIES -->
+    <!-- ALL postS -->
     <div class="mr-4 ml-4 mt-5 d-flex-center d-flex-column">
-        <h2 class=" fs-header-xlarge fc-red">All Pies</h2>
+        <h2 class=" fs-header-xlarge fc-red">All posts</h2>
       <table class="table-border1">
         <thead>
             <tr>
@@ -55,17 +55,17 @@
             </tr>
         </thead>
         <tbody>
-            {% for pie in pies %}
+            {% for post in posts %}
             <tr>
-                <td class="hidden-btn"><a href="/pies/{{ pie.id }}">{{ pie.recipe }}</a></td>
-                <td>{{ pie.user.first_name }} {{ pie.user.last_name }}</td>
-                <td>{{ pie.total_points }}</td>
+                <td class="hidden-btn"><a href="/posts/{{ post.id }}">{{ post.recipe }}</a></td>
+                <td>{{ post.user.first_name }} {{ post.user.last_name }}</td>
+                <td>{{ post.total_points }}</td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
     </div>
-<!-- ALL PIES -->
+<!-- ALL postS -->
 
 </body>
 </html>
